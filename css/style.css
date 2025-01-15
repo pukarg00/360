@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li::after{
+  content:'';
+  width: 0%;
+  height:2px;
+  background: red;
+  display:block;
+  margin:auto;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after{
+  width:100%;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo img {
+  height: 150px;
+  width: auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+#products,
+#featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product,
+.watch {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover,
+.watch:hover {
+  transform: translateY(-5px);
+}
+
+.product img,
+.watch img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.product p,
+.watch p {
+  margin: 8px 0;
+}
+
+.product strong,
+.watch strong {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.product .price,
+.watch .price {
+  font-size: 1.3em;
+  color: #2c5282;
+  font-weight: bold;
+}
+
+.product .discount,
+.watch .discount {
+  color: #48bb78;
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
+.product button,
+.watch button {
+  background: #2c5282;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.product button:hover,
+.watch button:hover {
+  background: #2d3748;
+}
