@@ -36,18 +36,18 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-nav ul li::after{
-  content:'';
+nav ul li::after {
+  content: "";
   width: 0%;
-  height:2px;
+  height: 2px;
   background: red;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
   transition: 0.5s;
 }
 
-nav ul li:hover::after{
-  width:100%;
+nav ul li:hover::after {
+  width: 100%;
 }
 
 .logo {
@@ -85,6 +85,10 @@ h2 {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease;
+}
+.sometext {
+  padding: 10px;
+  text-align: center;
 }
 
 .product:hover,
